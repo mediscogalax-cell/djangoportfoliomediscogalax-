@@ -85,13 +85,16 @@ h1{
     background-color:black;
     color: white;
 }
-@media  (min-width:100px ) {
+@media  (min-width:300px ) {
     #main {
         #search{
             height:40px;
         }
         #container{
             grid-template-columns: repeat(2,300px)
+        }
+        #hero{
+            width:300px;
         }
         
     }
