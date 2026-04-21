@@ -93,11 +93,16 @@ h1{
         #container{
             grid-template-columns: repeat(2,300px)
         }
-        #hero{
+     
+        
+    }
+    @media screen and (max-width: 300px) {
+           #hero{
             width:300px;
         }
         
-    }
+    }   
+
     
 }
 #profile:hover{
