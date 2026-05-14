@@ -1,32 +1,14 @@
-const menu = document.getElementById('menu');
-const content = document.getElementById('content');
-menu.addEventListener('click', function(e) {
-  e.stopPropagation();
-  content.style.display = content.style.display === 'block' ? 'none' : 'block';
-});
 
-document.addEventListener('click', function() {
-  content.style.display = 'none';
-});
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById("time").innerText = timeString;
+        }
 
-window.addEventListener('onclick', function(e) {
-    if (!menu.contains(e.target)) {
-        content.style.display = 'none';
-    }
-}
-);  
+        // Update every second
+        setInterval(updateTime, 1000);
 
-const m=document.getElementById('nb').addEventListener('click',()=>{
-alert('submitted')
-})
+        // Run immediately
+        updateTime();
 
-car={
-    name:"jeep",
-    model:"tesla",
-    color:"red"
-
-}
-console.log(car.name)
-
-me=new(car)
-console.log(typeof(me))
+        
