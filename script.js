@@ -10,5 +10,6 @@
 
         // Run immediately
         updateTime();
-
-        
+document.getElementById("sb").addEventListener("onclick", function () {
+    alert("Your message has been sent successfully!");
+});    
